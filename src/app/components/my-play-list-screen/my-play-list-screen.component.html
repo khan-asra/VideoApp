@@ -1,0 +1,27 @@
+
+<div>
+    <h1>
+        Your playlist
+    </h1>
+
+    <!--If play list is empty -->
+
+    <section >
+        <button  *ngIf="(myplaylist.length > 0) else message"  (click)="clearList()">
+            Clear Playlist
+        </button>
+  <ng-template #message>
+    <p >
+        There is no video in the play list 
+    </p>
+   
+  </ng-template>
+    </section>
+
+  
+  <app-video *ngFor="let listing of  myplaylist"[video]="listing" [playlistShowbutton]="true">
+    </app-video>
+</div>
+
+
+<!--[style.visibility]="(myplaylist.length === 0) ? 'visible' : 'hidden' "-->

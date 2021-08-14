@@ -1,0 +1,35 @@
+img{
+    text-align: center;
+    width: 30vw;
+}
+div{
+    padding: 25px;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+li{
+    display: inline;
+    margin-right: 20px;
+}
+nav{
+    
+    height: 50px;
+    margin-top: 20px;
+}
+a{
+    font-size: 25px;
+  
+    text-decoration: none;
+    columns: #555;
+    color:rgb(77, 77, 238)
+}
+a:hover{
+    color:#aaa ;
+}

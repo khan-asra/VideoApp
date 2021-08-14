@@ -1,0 +1,41 @@
+<div>
+  <input type="text" [(ngModel)]="searchWord" id ="searchWord" name ="searchWord"  placeholder="Search for a Videos"required />
+  <button (click)="getVideos()" formtarget="_blank">Get Videos</button>
+ </div>
+<div>
+  <app-listing></app-listing>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+ <div>
+   <app-listing  [dataListFromAPI]="VideoList"></app-listing>
+ </div>
+
+ -->
+
+
+
+
+
+<!--
+<div>
+    <input type="text" ngModel="HomeScreenComponent.s" id ="s" name ="s" required />
+  
+    <button (click)="getVideos()">Get Videos</button>
+   </div>
+  <div *ngFor ="let d of dataListFromAPI">
+    <p>{{d.title}}</p>
+  </div>
+-->
+

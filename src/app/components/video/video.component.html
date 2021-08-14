@@ -1,0 +1,20 @@
+<div id="video">
+  <section id="section1">
+    <img  id ="thumbnail" src="{{video.thumbnail_360_url}}">
+  </section>
+  <section id="section2">
+    <a id="title" href="https://www.dailymotion.com/video/{{video.id}}" target="_blank"> {{video.title}}</a>
+    <div id="ownerDetails">
+      <img id="imgRound" src="{{video['owner.avatar_80_url'] }}" />
+      <p>"{{video['owner.username']}}"</p>
+    </div>
+    <div id="viewsAndDate">
+      <p>Posted on <span>{{video.created_time*1000 | date: 'yyyy-MM-dd'}}</span></p>
+      <p>Views <span>{{video.views_total}}</span></p>
+    </div>
+    
+    <button *ngIf=" !playlistShowbutton" (click)="addToPlayListPressed()" [disabled]="isPlayList===true">
+      {{buttonText}} </button>
+  </section>
+</div>
+<br>
